@@ -102,7 +102,12 @@ def test_historical_and_forecast_periods_are_separated():
 def test_currency_is_normalized():
     period = build_period()
 
-    period = period.model_copy(update={"currency": "gbp"})
+    period = period.__class__(
+        **{
+            **period.model_dump(),
+            "currency": "gbp",
+        }
+    )
 
     assert period.currency == "GBP"
 
