@@ -53,3 +53,12 @@ The financial model remains the centre of the project.
 
 A future interface will be intentionally lightweight and will expose the
 underlying valuation engine rather than replacing it.
+
+## Current financial capabilities
+
+The platform currently supports a normalized five-year historical financial
+dataset for MSFT and calculates revenue growth, profitability margins,
+net debt and free cash flow.
+
+The next development stage will connect these historical results to an
+integrated forecast and three-statement model.
