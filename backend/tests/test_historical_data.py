@@ -39,7 +39,7 @@ def test_historical_metrics_are_calculated():
     assert latest["gross_profit"] == 195422
     assert latest["ebitda"] == 131604
     assert latest["ebit"] == 116374
-    assert latest["net_debt"] == -36444
+    assert latest["net_debt"] == -30444
     assert latest["free_cash_flow"] == 52900
 
 

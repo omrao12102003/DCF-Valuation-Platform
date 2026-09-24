@@ -23,7 +23,7 @@ def validate_historical_data(frame: pd.DataFrame) -> list[str]:
     monetary_columns = [
         column
         for column in frame.columns
-        if column not in {"fiscal_year"}
+        if column not in {"fiscal_year", "revenue_growth"}
     ]
 
     for column in monetary_columns:
